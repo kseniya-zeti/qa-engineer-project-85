@@ -24,16 +24,11 @@ requirement: |
   test-data: |
      - no data
   steps:
-    -  
     - Выбрать таблицу "LEADERBOARD"
     - Нажать на "monthly"
   expected-result: |
    Корректное отображение таблицы лидеров по рейтингу за месяц
    
-
-   
-
-
 - summary: |
       Проверка авторизации пользователя с несуществующей почтой 
    requirement: |
@@ -50,8 +45,6 @@ requirement: |
     expected-result: | 
     Пользователь должен получить уведомление об ошибки
 
-
-
 - summary: |
      Проверка авторизации  пользователя с существующей почтой и паролем
   requirement: |
@@ -67,10 +60,19 @@ requirement: |
   expected-result: |
     Пользователь должен попасть на главную страницу сайта
 
-
-    Переход на главную страницу с помощью 
-
-    
+- summary: |
+    Переход на главную страницу с помощью "Codebattle by Hexlet community"
+  requirement: |
+    Возможность перехода на главную страницу сайта с помощью названия  "Codebattle by Hexlet community"
+  prerequisites: |
+    Открыта страница профиля пользователя 
+  test-data: |
+    - no date
+  steps:
+   - Нажать на  "Codebattle by Hexlet community"
+   expected-result: |
+    Пользователь должен попасть на главную страницу сайта
+     
 - summary: |
      Проверка регистрации  пользователя с корректными данными 
   requirement: |
@@ -101,7 +103,7 @@ requirement: |
      открыта главная страница
   test-data: |
      - no data
-  steps:
+  steps: 
     - Нажать на иконку пользователя 
     - Выбрать My profile
   expected-result: |
