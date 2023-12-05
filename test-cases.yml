@@ -59,7 +59,43 @@ requirement: |
     - Нажимаем кнопку «Submit»
   expected-result: |
     Пользователь должен попасть на главную страницу сайта
+    
+- summary: |
+     Проверка  запуска игры с " ботом "
+  requirement: |  
+     Пользователь должен быть авторизированн на сайте 
+  prerequisites: | 
+     Открыта главная страница 
+  test-data: |
+    - no data
+     steps:
+     - Нажать "Create the game"
+     - Выбрать "Game Type"
+     - Выбрать " With bot" 
+     - Нажать " Сreate battle"
+   expected-result: |
+       Возможность играть с ботом
 
+ - summary: |
+        Проверка выставления временя при запуски игры 
+        requirement: |
+     
+
+ - summary: |
+     Проверка  запуска игры с неавторизированным пользователем 
+   requirement: |
+     Возможность играть в игру неавторизированным пользователем 
+   prerequisites: | 
+     Открыта страница сайта
+   test-data: |
+     - no data
+    steps:
+    - Нажать на "Try simple battle"
+    expected-result: |
+    Возможность запуска игры  неавтаризированным пользователям 
+    
+
+  
 - summary: |
     Переход на главную страницу с помощью "Codebattle by Hexlet community"
   requirement: |
@@ -108,6 +144,8 @@ requirement: |
     - Выбрать My profile
   expected-result: |
     В профиле пользователя должна отображаться статистика игры
+
+    
     
      - summary: |
     Проверка сайта на наличия мобильной версии
