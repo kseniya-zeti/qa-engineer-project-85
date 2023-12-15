@@ -20,11 +20,11 @@
        На  Github уже есть созданный акаунт пользователя 
    prerequisites: |
         Открыта страница с авторизацией 
-   test-data: | 
+   test-data: |
       - no data
    steps:
       - Нажать на "Sign in with Github"
-    expected-result: | 
+    expected-result: |
     Пользователь может авторизоваться через Github
 
 - summary: |
@@ -33,11 +33,11 @@
        На Discord уже есть созданный акаунт пользователя 
    prerequisites: |
         Открыта страница с авторизацией 
-   test-data: | 
+   test-data: |
       - no data
    steps:
       - Нажать на "Sign in with Discord "
-    expected-result: | 
+    expected-result: |
     Пользователь может авторизоваться через Discord 
     
 - summary: |
@@ -46,14 +46,14 @@
        При некорректном вводе почты  пользователь должен получить уведомление об ошибки
   prerequisites: |
         открыта страница с авторизацией 
-  test-data: | 
+  test-data: |
         Email = sethjk.@email.com 
         Password = 123456789
    steps:
       - Вводим Email
       - Вводим Password
       - Нажимаем кнопку «Submit»
-    expected-result: | 
+    expected-result: |
     Пользователь должен получить уведомление об ошибки
 
 - summary: |
@@ -102,7 +102,7 @@
      Проверка  запуска игры с неавторизированным пользователем 
   requirement: |
      Возможность играть в игру неавторизированным пользователем 
-  prerequisites: | 
+  prerequisites: |
      Открыта страница сайта
   test-data: |
      - no data
@@ -144,7 +144,7 @@
      Пользователь должен быть авторизован на сайте  
   prerequisites: |
      Открыта главная страница 
-  test-data: |  
+  test-data: |
      - no data
   steps:
      - Нажать  "Create the game"
@@ -156,9 +156,9 @@
 
 - summary: |
      Проверка  запуска игры с " ботом "
-  requirement: |  
+  requirement: |
      Пользователь должен быть авторизированн на сайте 
-  prerequisites: | 
+  prerequisites: |
      Открыта главная страница 
   test-data: |
     - no data
@@ -172,9 +172,9 @@
 
 - summary: |
      Проверка  запуска игры с " другом "
-  requirement: |  
+  requirement: |
      Пользователь должен быть авторизированн на сайте 
-  prerequisites: | 
+  prerequisites: |
      Открыта главная страница 
   test-data: |
     - no data
@@ -189,9 +189,9 @@
 
 - summary: |
      Проверка  запуска игры с "другим пользователем"
-  requirement: |  
+  requirement: |
      Пользователь должен быть авторизированн на сайте 
-  prerequisites: | 
+  prerequisites: |
      Открыта главная страница 
   test-data: |
     - no data
@@ -208,7 +208,7 @@
         Проверка  выбора уровня сложности задачи при запуски игры 
    requirement: |
       Пользователь должен быть авторизированн на сайте
-   prerequisites: | 
+   prerequisites: |
       Открыта главная страница   
    test-data: |
     - no data
@@ -222,7 +222,7 @@
       Проверка выставления временя при запуски игры 
    requirement: |
       Пользователь должен быть авторизированн на сайте
-   prerequisites: | 
+   prerequisites: |
       Открыта главная страница   
    test-data: |
     - no data
@@ -237,7 +237,7 @@
       Проверка  отправки сообщения в чат
   requirement: |
       Пользователь может отправить сообщение в чат 
-  prerequisites: | 
+  prerequisites: |
       Открыта главная страница  
   test-data: |
     - no data
@@ -252,7 +252,7 @@
       Проверка списка сохраненных игр пользователей 
   requirement: |
       Пользователь должен быть авторизирован на сайте
-  prerequisites: | 
+  prerequisites: |
       Открыта главная страница  
   test-data: |
     - no data
